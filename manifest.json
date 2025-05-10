@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Derpibooru Full Downloader",
+  "version": "1.1",
+  "description": "Добавляет пункт 'Download full - derpy' для загрузки полного изображения с derpibooru.org.",
+  "permissions": ["contextMenus", "downloads", "scripting"],
+  "host_permissions": ["https://derpibooru.org/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [{
+    "matches": ["https://derpibooru.org/*"],
+    "js": ["content_script.js"]
+  }],
+  "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+}
