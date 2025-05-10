@@ -8,10 +8,6 @@
   "background": {
     "service_worker": "background.js"
   },
-  "content_scripts": [{
-    "matches": ["https://derpibooru.org/*"],
-    "js": ["content_script.js"]
-  }],
   "icons": {
       "16": "icon.png",
       "48": "icon.png",
